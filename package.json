@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-      "test": "web-test-runner \"src/**/*.test.js\" --node-resolve"
+    "test": "web-test-runner \"src/**/*.test.js\" --node-resolve"
   },
   "author": "",
   "license": "ISC",
@@ -12,9 +12,11 @@
     "@tensorflow/tfjs": "^3.13.0"
   },
   "devDependencies": {
+    "@esm-bundle/chai": "^4.3.4-fix.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
     "@web/dev-server-esbuild": "^0.2.16",
+    "@web/dev-server-rollup": "^0.3.15",
     "@web/test-runner": "^0.13.27",
-    "@web/test-runner-playwright": "^0.8.8",
-    "@esm-bundle/chai": "^4.3.4-fix.0"
+    "@web/test-runner-playwright": "^0.8.8"
   }
 }
