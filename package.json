@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tensorflow/tfjs": "^3.13.0"
+    "@tensorflow/tfjs": "^3.13.0",
+    "plugin": "^0.3.3"
   },
   "devDependencies": {
     "@esm-bundle/chai": "^4.3.4-fix.0",
