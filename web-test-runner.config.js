@@ -1,16 +1,16 @@
-const rollupCommonjs = require('@rollup/plugin-commonjs');
-const { fromRollup } = require('@web/dev-server-rollup');
+// const rollupCommonjs = require('@rollup/plugin-commonjs');
+// const { fromRollup } = require('@web/dev-server-rollup');
 
-const commonjs = fromRollup(rollupCommonjs);
+// const commonjs = fromRollup(rollupCommonjs);
 
 module.exports = {
   files: ['**/*.test.ts'],
-  plugins: [
-    commonjs({
-      include: [
-        './node_modules/@tensorflow/**/*',
-      ],
-    }),
-  ],
+  // plugins: [
+  //   commonjs({
+  //     include: [
+  //       // './node_modules/@tensorflow/**/*',
+  //     ],
+  //   }),
+  // ],
 };
 
