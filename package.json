@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "web-test-runner \"src/**/*.test.js\" --node-resolve"
+    "bundle": "esbuild node_modules/@tensorflow/tfjs/src/index.ts --outfile=src/tfjs-output.js --bundle",
+    "test": "yarn bundle && web-test-runner \"src/**/*.test.js\" --node-resolve"
   },
   "author": "",
   "license": "ISC",
